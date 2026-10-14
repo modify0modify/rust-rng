@@ -1,0 +1,11 @@
+[package]
+name = "rng"
+version = "0.1.0"
+edition = "2021"
+description = "A small command-line random number generator"
+readme = "README.md"
+
+[dependencies]
+clap = { version = "=4.5.23", features = ["derive"] }
+# Pinned for Rust 1.83. rand 0.9+ requires a newer compiler.
+rand = "=0.8.5"
